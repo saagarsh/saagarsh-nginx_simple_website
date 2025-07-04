@@ -2,7 +2,7 @@ FROM nginx:stable-alpine
 
 WORKDIR /usr/share/nginx/html
 
-COPY . .
+COPY ./webapp .
 
 EXPOSE 80
 
