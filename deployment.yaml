@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: webapp
+spec:
+  selector:
+    matchLabels:
+      app: webapp
+  template:
+    metadata:
+      labels:
+        app: webapp
+    spec:
+      containers:
+      - name: myapp
+        image: saagarsh/nginx_simple_website
+        resources:
+          requests:
+            memory: "80Mi"
+            cpu: "100m"
+          limits:
+            memory: "80Mi"
+            cpu: "100m"
+        ports:
+        - containerPort: 80

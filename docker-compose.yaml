@@ -1,0 +1,8 @@
+services:
+  mywebapp:
+    build: .
+    ports:
+      - "80:80"  
+    volumes:
+      - ./webapp:/usr/share/nginx/html
+    restart: unless-stopped  

@@ -1,0 +1,6 @@
+.terraform/*
+.dockerignore
+.terraform.lock.hcl
+inventory.ini
+myweb_key*
+*.tfstate*
